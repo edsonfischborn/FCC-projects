@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --text-light: hsl(0, 0%, 100%);
+  --text-dark: hsl(0, 0%, 13%);
+  --color-dark-1: hsl(213, 73.7%, 26.9%);
+  --color-dark-2: hsl(197, 84.8%, 38.6%);
+  --color-light-2: hsl(52, 90.5%, 58.8%);
+  --color-light-3: hsl(45, 85.7%, 97%);
+}
+
+body {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+body,
+strong,
+a,
+h2 {
+  color: var(--text-dark);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  height: 100vh;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    var(--color-dark-1) 60%,
+    var(--color-dark-2) 40%
+  );
+  align-items: center;
+}
+
+.main__description {
+  color: var(--text-light);
+  width: 50%;
+  margin-right: 50px;
+}
+
+.main__card {
+  margin-left: 50px;
+  max-width: 550px;
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+  background-color: var(--color-light-3);
+  box-shadow: 0px 0px 15px 5px var(--color-dark-1);
+}
+
+.main__description__text {
+  margin: 12px 0;
+}
+
+.main__description__link {
+  display: block;
+  width: 125px;
+  height: 50px;
+  font-weight: 500;
+  background-color: var(--color-light-2);
+  float: right;
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+.main__description__link:hover {
+  opacity: 0.8;
+}
+
+.main__card__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__card__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.main__card__caption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.main__card_content {
+  margin-top: 10px;
+}
+
+.main__card__title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.main__card__item {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+}
+
+.credits__link {
+  color: var(--text-light);
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding: 0 10px;
+    flex-direction: column;
+    min-height: 1500px;
+    background: linear-gradient(
+      0deg,
+      var(--color-dark-1) 60%,
+      var(--color-dark-2) 40%
+    );
+    align-items: center;
+  }
+
+  .main__description {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .main__card {
+    margin: 200px 0 0 0;
+  }
+}

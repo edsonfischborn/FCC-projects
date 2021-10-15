@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Freecodecamp responsive web design project, Portfolio"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="Portfolio" />
+    <meta name="author" content="Édson Fischborn" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header id="navbar" class="header">
+      <h1 class="header__title">FCC:Portifolio</h1>
+      <input class="header__checkbox" type="checkbox" />
+
+      <div class="header__burger__menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+
+      <nav class="header__nav">
+        <a class="nav-link header__link" href="#welcome-section">inicio</a>
+        <a class="nav-link header__link" href="#projetos">projetos</a>
+        <a class="nav-link header__link" href="#footer">contato</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="welcome-section">
+      <div class="hero__data">
+        <h1 class="hero__title">Édson Fischborn</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Dolores laudantium
+          reprehenderit sit similique neque. Pariatur, explicabo. Laboriosam,
+          dolores corrupti aut aliquam iste blanditiis optio, totam
+          reprehenderit consequuntur, tempora voluptas eligendi.
+        </p>
+        <div class="hero__buttons">
+          <a class="hero__button" href="#footer">Contato</a>
+          <a class="hero__button--orange" href="#projetos">Projetos</a>
+        </div>
+      </div>
+
+      <img class="hero__background" src="images/pattern.svg" alt="background" />
+    </section>
+
+    <main id="projetos" class="main">
+      <section class="main__projects" id="projects">
+        <h2 class="main__projects__title">Projetos no GitHub</h2>
+        <ul class="main__project__list">
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/nodejs-file-crud"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">nodejs-file-crud</strong>
+                <p class="main__project__description">
+                  create, read, update and delete data in a JSON file using node
+                  js file system
+                </p>
+                <span class="main__project__lang__color bg-js"></span>
+                <span class="main__project__lang">JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/meme-generator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">meme-generator</strong>
+                <p class="main__project__description">
+                  specific and objective code of a meme generator simulator
+                </p>
+                <span class="main__project__lang__color bg-js"></span>
+                <span class="main__project__lang">JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/whatsapp-sentence-bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title"
+                  >whatsapp-sentence-bot</strong
+                >
+                <p class="main__project__description">
+                  Reply messages with a picture of famous people and message
+                  sentece
+                </p>
+                <span class="main__project__lang__color bg-ts"></span>
+                <span class="main__project__lang">TypeScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/st3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">st3</strong>
+                <p class="main__project__description">sem descrição</p>
+                <span class="main__project__lang__color bg-js"></span>
+                <span class="main__project__lang">JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/pages"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">pages</strong>
+                <p class="main__project__description">sem descrição</p>
+                <span class="main__project__lang__color bg-css"></span>
+                <span class="main__project__lang">CSS</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/java"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">java</strong>
+                <p class="main__project__description">sem descrição</p>
+                <span class="main__project__lang__color bg-java"></span>
+                <span class="main__project__lang">Java</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-tile">
+            <a
+              href="https://github.com/edsonfischborn/fun-queue-sim"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="main__project">
+                <strong class="main__project__title">fun-queue-sim</strong>
+                <p class="main__project__description">sem descrição</p>
+                <span class="main__project__lang__color bg-js"></span>
+                <span class="main__project__lang">JavaScript</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer__icons">
+        <a class="footer__icon" href="https://github.com/edsonfischborn">
+          <i class="fab fa-twitter-square fa-2x"></i>
+        </a>
+        <a class="footer__icon" href="https://github.com/edsonfischborn">
+          <i class="fab fa-github-square fa-2x"></i>
+        </a>
+      </div>
+      <a
+        id="profile-link"
+        class="footer__link"
+        href="https://github.com/edsonfischborn"
+        target="_blank"
+      >
+        Édson Fischborn
+      </a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

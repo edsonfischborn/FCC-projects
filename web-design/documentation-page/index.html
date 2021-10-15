@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Freecodecamp responsive web design project, Documentation Page"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="Documentation, Documentation Page" />
+    <meta name="author" content="Édson Fischborn" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Documentation Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Documentação</h1>
+    </header>
+
+    <aside class="left-menu">
+      <nav id="navbar" class="left-menu__navbar">
+        <header>
+          <h1 class="left-menu__title">Javascript docs</h1>
+        </header>
+        <ul class="left-menu__list">
+          <li class="left-menu__item">
+            <a class="nav-link" href="#Introdução">Introdução</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="nav-link" href="#Variáveis">Variáveis</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="nav-link" href="#Laços">Laços</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="nav-link" href="#Funçoẽs">Funçoẽs</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="nav-link" href="#Objetos">Objetos</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-doc" class="main">
+      <section id="Introdução" class="main-section">
+        <header class="main-section__title">Introdução</header>
+        <p class="main-section__description">
+          JavaScript® (às vezes abreviado para JS) é uma linguagem leve,
+          interpretada e baseada em objetos com funções de primeira classe, mais
+          conhecida como a linguagem de script para páginas Web, mas usada
+          também em vários outros ambientes sem browser, tais como node.js,
+          Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada
+          em protótipos, multi-paradigma e dinâmica, suportando estilos de
+          orientação a objetos, imperativos e declarativos (como por exemplo a
+          programação funcional).
+        </p>
+        <ul class="main-section__list">
+          <p class="main-section__list__title">
+            Onde encontrar informações sobre JavaScript
+          </p>
+          <li class="main-section__list__item">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn"
+              target="_blank"
+              >Aprendendo sobre a internet
+            </a>
+            fornece informações aos iniciantes e introduz os conceitos básicos
+            de programação e da internet.
+          </li>
+          <li class="main-section__list__item">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide"
+              target="_blank"
+              >Guia JavaScript</a
+            >
+            (este guia) dá uma visão geral sobre a linguagem de programação
+            JavaScript e seus objetos.
+          </li>
+          <li class="main-section__list__item">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference"
+              target="_blank"
+              >Referência JavaScript</a
+            >
+            provê um material de referência detalhado da linguagem JavaScript.
+          </li>
+        </ul>
+      </section>
+      <section id="Variáveis" class="main-section">
+        <header class="main-section__title">Variáveis</header>
+        <p class="main-section__description">
+          Uma variável é um container para um valor, como um número que podemos
+          usar em uma operação de adição, ou uma sequência de texto que possamos
+          usar como parte de uma oração. Mas uma coisa especial a respeito das
+          variáveis é que seu conteúdo pode mudar. Vamos ver um exemplo simples:
+        </p>
+        <code>
+          <pre class="main-section__code">
+            var meuNome = 'Chris';
+            let minhaIdade = 37;
+            const altura = 1.87
+          </pre>
+        </code>
+
+        <p>
+          O código acima usa palavras reservadas para a declaração de variáveis
+        </p>
+      </section>
+      <section id="Laços" class="main-section">
+        <header class="main-section__title">Laços</header>
+        <p class="main-section__description">
+          Laços oferecem um jeito fácil e rápido de executar uma ação repetidas
+          vezes. Este capítulo do guia do JavaScript abordará diferentes formas
+          de iterações existentes no JavaScript. Você pode pensar em um laço de
+          repetição como um jogo onde você manda o seu personagem andar X passos
+          em uma direção e Y passos em outra; por exemplo, a ideia "vá 5 passos
+          para leste" pode ser expressa em um laço desta forma:
+        </p>
+        <ul class="main-section__list">
+          <p class="main-section__list__title">
+            Um loop geralmente possui um ou mais dos seguintes itens:
+          </p>
+          <li class="main-section__list__item">
+            O contador, que é inicializado com um certo valor - este é o ponto
+            inicial do loop.
+          </li>
+          <li class="main-section__list__item">
+            A condição de saída, que é o critério no qual o loop pára -
+            geralmente o contador atinge um certo valor.
+          </li>
+          <li class="main-section__list__item">
+            Um iterador, que geralmente incrementa o contador em uma pequena
+            quantidade a cada loop, sucessivamente, até atingir a condição de
+            saída.
+          </li>
+        </ul>
+        <code>
+          <pre class="main-section__code">
+            var passo;
+            for (passo = 0; passo < 5; passo++) { // Executa 5 vezes, com os valores de passos de 0 a 4.
+              console.log('executando', passo);
+            }
+        </pre
+          >
+        </code>
+        <p class="main-section__description">
+          O código acima realiza uma contagem de 0 a 4
+        </p>
+      </section>
+      <section id="Funçoẽs" class="main-section">
+        <header class="main-section__title">Funçoẽs</header>
+        <p class="main-section__description">
+          Praticamente sempre que você faz uso de um uma estrutura JavaScript em
+          que tem um par de parenteses — () — e você não está usando uma
+          estrutura embutida da linguagem como um for loop, while or do...while
+          loop, ou if...else statement, você está fazendo uso de uma função.
+        </p>
+        <code>
+          <pre class="main-section__code">
+            function multiply(a, b){
+              return a * b;
+            }
+          </pre>
+        </code>
+        <code>
+          <pre class="main-section__code">
+            function (a, b){
+              return a * b;
+            }
+          </pre>
+        </code>
+        <p class="main-section__description">
+          Os códigos acima representam uma função nomeada e uma função anônima
+          respectivamente
+        </p>
+      </section>
+      <section id="Objetos" class="main-section">
+        <header class="main-section__title">Objetos</header>
+        <p class="main-section__description">
+          Em JavaScript, quase tudo é objeto. Desde as funcionalidades padrão,
+          como strings e arrays, até as APIs para navegadores baseadas na
+          linguagem. Até você pode criar seus próprios objetos. Você pode
+          encapsular funções e variáveis relacionadas de uma forma eficiente. Os
+          objetos agem como uma espécie de manipuladores de dados. Compreender a
+          natureza da orientação a objetos do JavaScript é crucial para
+          aprofundar os conhecimentos acerca da linguagem. Por isso, nós
+          elaboramos esse módulo para auxiliá-lo. Ensinaremos a teoria de
+          objetos em detalhes. Crie seus próprios objetos!
+        </p>
+        <code>
+          <pre class="main-section__code">
+          let pessoa = {
+            name: 'Pedro',
+            idade: 21
+          }
+          </pre>
+        </code>
+        <p class="main-section__description">
+          O codigo acima representa a criação de um obejeto literal. Em
+          JavaScript, quase tudo é um objeto. Todos os tipos primitivos - com
+          exceção de null e undefined - são tratados como objetos. Eles podem
+          receber propriedades (propriedades atribuídas de alguns tipos não são
+          persistentes), e possuem todas as características de objetos.
+        </p>
+      </section>
+    </main>
+
+    <aside class="right-menu">
+      <nav>
+        <h1>Navegar por</h1>
+        <details open class="right-menu__details">
+          <summary>Mais Acessados</summary>
+          <ul class="right-menu__list">
+            <li>
+              <a href="#Variáveis">Variáveis</a>
+            </li>
+            <li>
+              <a href="#Laços">Laços</a>
+            </li>
+            <li>
+              <a href="#Objetos">Objetos</a>
+            </li>
+          </ul>
+        </details>
+        <details class="right-menu__details">
+          <summary>Novos</summary>
+          <ul class="right-menu__list">
+            <li>
+              <a href="#Introdução">Introdução</a>
+            </li>
+
+            <li>
+              <a href="#Funçoẽs">Funçoẽs</a>
+            </li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <footer class="footer">
+      <a
+        class="footer__link"
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        target="_blank"
+      >
+        Referência
+      </a>
+      <a
+        class="footer__link"
+        href="https://github.com/edsonfischborn"
+        target="_blank"
+      >
+        Édson Fischborn
+      </a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

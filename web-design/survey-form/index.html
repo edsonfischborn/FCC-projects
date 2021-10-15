@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Freecodecamp responsive web design project, survey form"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="survey, form, survey form" />
+    <meta name="author" content="Édson Fischborn" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__header">
+        <h1 id="title" class="main__header__title">Pesquisa DEV</h1>
+        <p id="description" class="main__header__description">
+          Preencha o formulario corretamente.
+        </p>
+      </div>
+      <form id="survey-form" class="form">
+        <fieldset class="form__group">
+          <legend class="form__group__title">Informações pessoais</legend>
+          <div class="form__item">
+            <label id="name-label" for="name">Nome</label>
+            <input
+              type="text"
+              class="form__input"
+              name="name"
+              id="name"
+              placeholder="Nome Sobrenome"
+              required
+            />
+          </div>
+          <div class="form__item">
+            <label id="email-label" for="email">E-mail</label>
+            <input
+              type="email"
+              class="form__input"
+              name="email"
+              id="email"
+              placeholder="@exemplo@dominio.com"
+              required
+            />
+          </div>
+          <div class="form__item">
+            <label id="number-label" for="number">Idade</label>
+            <input
+              type="number"
+              class="form__input"
+              name="age"
+              id="number"
+              min="10"
+              max="100"
+              placeholder="10"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group__title">Informações profissionais</legend>
+
+          <p class="form__item__title">
+            Selecione seu tempo de carreira (anos)
+          </p>
+          <div class="form__item">
+            <select class="form__input" name="dropdown" id="dropdown">
+              <option value="option1">Selecione...</option>
+              <option value="option2">1-5</option>
+              <option value="option3">6-10</option>
+              <option value="option4">10+</option>
+            </select>
+          </div>
+
+          <p class="form__item__title">Selecione seu nivel de conhecimento</p>
+          <div class="form__item">
+            <input type="radio" id="radio-junior" name="level" value="junior" />
+            <label for="radio-junior">Júnior</label>
+          </div>
+          <div class="form__item">
+            <input type="radio" id="radio-pleno" name="level" value="pleno" />
+            <label for="radio-pleno">Pleno</label>
+          </div>
+          <div class="form__item">
+            <input type="radio" id="radio-senior" name="level" value="senior" />
+            <label for="radio-senior">Sênior</label>
+          </div>
+
+          <p class="form__item__title">
+            Selecione as tecnologias que você possui conhecimento
+          </p>
+          <div class="form__item">
+            <input
+              type="checkbox"
+              id="checkbox-html"
+              name="skillHtml"
+              value="html"
+            />
+            <label for="checkbox-html">HTML5</label>
+          </div>
+          <div class="form__item">
+            <input
+              type="checkbox"
+              id="checkbox-css"
+              name="skillCss"
+              value="css"
+            />
+            <label for="checkbox-css">CSS3</label>
+          </div>
+          <div class="form__item">
+            <input
+              type="checkbox"
+              id="checkbox-javascript"
+              name="skillJavascript"
+              value="javascript"
+            />
+            <label for="checkbox-javascript">Javascript</label>
+          </div>
+          <div class="form__item">
+            <input
+              type="checkbox"
+              id="checkbox-react"
+              name="skillReact"
+              value="react"
+            />
+            <label for="checkbox-react">React</label>
+          </div>
+
+          <div class="form__item">
+            <label for="otherSkills">Descreva outras skills (opcional)</label>
+            <textarea
+              type="textarea"
+              id="otherSkills"
+              class="form__input"
+              name="otherSkills"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <button id="submit" class="form__submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <a
+        class="footer__link"
+        href="https://github.com/edsonfischborn"
+        target="_blank"
+      >
+        Édson Fischborn
+      </a>
+    </footer>
+
+    <script>
+      const title = document.querySelector("#title");
+      title.innerText = `${title.innerText} ${new Date().getFullYear()},`;
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

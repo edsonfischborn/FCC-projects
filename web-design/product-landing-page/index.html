@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Freecodecamp responsive web design project, Product Landing Page"
+    />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="keywords"
+      content="Product Landing Page, Landing Page, Product"
+    />
+    <meta name="author" content="Édson Fischborn" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <img
+        id="header-img"
+        class="header__img"
+        src="./images/logo.png"
+        alt="logo"
+      />
+
+      <input class="header__checkbox" type="checkbox" />
+
+      <div class="header__burger__menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+
+      <nav id="nav-bar" class="header__nav">
+        <a class="nav-link header__link" href="#inicio">inicio</a>
+        <a class="nav-link header__link" href="#sobre">sobre</a>
+        <a class="nav-link header__link" href="#saiba_mais">saiba mais</a>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="hero__data">
+        <h1 class="hero__title">Freecodecamp product landing page</h1>
+        <p>
+          By Édson Fischborn. amet consectetur adipisicing elit. Officia magnam
+          voluptates nam assumenda nihil sit! Ab delectus ullam reiciendis
+          placeat veritatis quaerat eos vitae, itaque debitis! Eum enim error
+          necessitatibus!
+        </p>
+        <a class="hero__link" href="#">sobre</a>
+        <a class="hero__link" href="#">tease</a>
+      </div>
+      <img
+        class="hero__product__img"
+        src="./images/product-hero.png"
+        alt="smartwatch"
+      />
+    </section>
+
+    <main class="main">
+      <section id="sobre" class="main__product">
+        <img
+          class="main__product__img"
+          src="./images/product-main.png"
+          alt="product"
+        />
+        <div class="main__product__data">
+          <h2 class="main__product__title">Sobre o produto</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+            magnam voluptates nam assumenda nihil sit! Ab delectus ullam
+            reiciendis placeat veritatis quaerat eos vitae, itaque debitis! Eum
+            enim error necessitatibus!Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Officia magnam voluptates nam assumenda nihil sit!
+            Ab delectus ullam reiciendis placeat veritatis quaerat eos vitae,
+            itaque debitis! Eum enim error necessitatibus!Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Officia magnam voluptates nam
+            assumenda nihil sit! Ab delectus ullam reiciendis placeat veritatis
+            quaerat eos vitae, itaque debitis! Eum enim error necessitatibus!
+          </p>
+          <div class="main__product__data__details">
+            <div class="product__details">
+              <img
+                class="product__details__icon"
+                src="./images/icon-screen.png"
+                alt="Tamanho de tela"
+              />
+              <div>
+                <strong>Tela</strong>
+                <p class="product__details__description">
+                  Eum enim error necessitatibus!
+                </p>
+              </div>
+            </div>
+            <div class="product__details">
+              <img
+                class="product__details__icon"
+                src="./images/icon-wifi.png"
+                alt="Wifi"
+              />
+              <div>
+                <strong>Conexão</strong>
+                <p class="product__details__description">
+                  Eum enim error necessitatibus!
+                </p>
+              </div>
+            </div>
+            <div class="product__details">
+              <img
+                class="product__details__icon"
+                src="./images/icon-gps.png"
+                alt="Gps incluido"
+              />
+              <div>
+                <strong>GPS</strong>
+                <p class="product__details__description">
+                  Eum enim error necessitatibus!
+                </p>
+              </div>
+            </div>
+            <div class="product__details">
+              <img
+                class="product__details__icon"
+                src="./images/icon-palet.png"
+                alt="Diversas cores"
+              />
+              <div>
+                <strong>Cores</strong>
+                <p class="product__details__description">
+                  Eum enim error necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="saiba_mais" class="main__footer">
+        <h3 class="main__footer__title">Inscreva-se e receba as novidades</h3>
+        <video
+          class="main__footer__video"
+          id="video"
+          src="./images/video.mp4"
+          controls
+          autoplay
+          loop
+        ></video>
+        <form
+          class="main__footer__form"
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <input
+            class="main__footer__email"
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="exemplo@dominio.com"
+          />
+          <input
+            class="main__footer__submit"
+            id="submit"
+            type="submit"
+            value="cadastrar"
+          />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        class="footer__link"
+        href="https://github.com/edsonfischborn"
+        target="_blank"
+      >
+        Édson Fischborn
+      </a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
